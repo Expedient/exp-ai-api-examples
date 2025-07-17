@@ -228,6 +228,7 @@ Choose the right model for your needs:
 - **[Standard Streaming Example](example.py)** - Detailed implementation with comments
 - **[Reasoning Example](reasoning_example.py)** - Advanced reasoning with thinking animation
 - **[Citation Example](citation_example.py)** - Web search with real-time citations
+- **Live Swagger API Documentation** - Visit `[ ENTER_CHAT_URL_HERE ]/docs` in your browser for interactive API documentation
 - **API Documentation** - Contact Expedient AI for detailed API docs
 
 ## Support
