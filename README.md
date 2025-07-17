@@ -21,6 +21,9 @@ This repository contains examples and documentation for integrating with the Exp
 4. **Update the API key** in the example file that you are running
 5. **Run the examples:**
    ```bash
+   # Quick test (simplest)
+   python quick_start.py
+   
    # Standard streaming models
    python example.py
    
@@ -29,6 +32,12 @@ This repository contains examples and documentation for integrating with the Exp
 
    # Web access models with citations (for live web search)
    python citation_example.py
+   
+   # OR use cURL commands directly (see curl.md)
+   curl -X POST "[ ENTER_CHAT_URL_HERE ]/chat/completions" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer [ ENTER_API_KEY_HERE ]" \
+     -d '{"model": "gpt-4.1", "messages": [{"role": "user", "content": "Hello!"}]}'
    ```
 
 ## Files in this Repository
@@ -63,10 +72,17 @@ Perplexity web reasoning models with real-time data and citations. Features:
 
 ### 📄 `postman.md`
 Complete Postman collection documentation with:
-- 6 ready-to-use API request examples
+- 8 ready-to-use API request examples
 - All supported AI models and providers
 - Parameter explanations and usage tips
 - Import instructions for Postman
+
+### 📄 `curl.md`
+Command-line cURL examples for developers and scripters. Features:
+- 8 cURL commands matching all Postman examples
+- Advanced options and streaming processing
+- Environment variable setup for security
+- Batch processing and error handling examples
 
 ### 📄 `.gitignore`
 Python-specific gitignore file that excludes:
@@ -207,6 +223,7 @@ Choose the right model for your needs:
 ## Documentation
 
 - **[Postman Collection](postman.md)** - Complete API testing examples
+- **[cURL Examples](curl.md)** - Command-line examples for terminal and scripts
 - **[Quick Start](quick_start.py)** - Minimal example for immediate testing
 - **[Standard Streaming Example](example.py)** - Detailed implementation with comments
 - **[Reasoning Example](reasoning_example.py)** - Advanced reasoning with thinking animation
